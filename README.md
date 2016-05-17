@@ -35,7 +35,7 @@ To use, add the `require` node module:
 
 ```JavaScript
 
-    const Optree = require('optree');
+    const optree = require('optree');
 
     const json = {
         'foo': [
