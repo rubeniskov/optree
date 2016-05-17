@@ -1,6 +1,6 @@
 {
   "name": "optree",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Plain Object path tree generator",
   "main": "index.js",
   "engines": {
