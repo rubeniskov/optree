@@ -52,9 +52,22 @@ To use, add the `require` node module:
             }
         }
     };
-    const obj = optree(json);
+    const foo = optree(json),
+          bar = optree(json, true);
 
-    console.log(obj);
+    console.log(foo);
+
+    /******
+    {
+      "foo": ['apple', 'pear'],
+      "bar.apple": '0',
+      "bar.pear": '1',
+      "first.second.third": 'last'
+    }
+    *******/
+
+    console.log(bar);
+    
     /******
     {
       "foo.0": 'apple',
